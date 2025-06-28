@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Genel arka plan ve yazı rengi */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(120deg, #fff 0%, #f8f8f8 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    color: #181818;
+}
+
+/* Ortada açılışta çıkan büyük logo */
+.center-big-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 10000;
+    width: 260px;
+    max-width: 90vw;
+    opacity: 1;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(0 4px 24px #e11d1d22);
+}
+
+/* Footer üstü küçük logo */
+.footer-logo {
+    position: fixed;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    z-index: 99999; /* <-- daha yüksek yap */
+    opacity: 1;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(0 2px 8px #e11d1d33);
+}
+
+/* Footer imza */
+.footer-signature {
+    position: fixed;
+    bottom: 8px;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    font-size: 1em;
+    color: #e11d1d;
+    opacity: 0.95;
+    z-index: 99999; /* <-- daha yüksek yap */
+    pointer-events: none;
+    font-family: 'Inter', Arial, sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+}
+
+/* Kartlar */
+.card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #e11d1d11;
+    padding: 28px;
+    margin: 28px 0;
+    transition: box-shadow 0.2s, transform 0.2s;
+    color: #181818;
+    border: 1.5px solid #e11d1d22;
+}
+.card:hover {
+    box-shadow: 0 8px 32px #e11d1d22;
+    transform: translateY(-4px) scale(1.01);
+}
+
+/* Butonlar */
+.btn-primary {
+    background: #e11d1d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px #e11d1d22;
+}
+.btn-primary:hover {
+    background: #b91c1c;
+}
+
+/* Bilgi badge'leri */
+.info {
+    display: inline-block;
+    background: #fff0f0;
+    color: #e11d1d;
+    padding: 6px 12px;
+    margin: 0px 5px 5px 0px;
+    border-radius: 6px;
+    border: 1px solid #e11d1d44;
+    font-size: small;
+    font-weight: 600;
+    height: auto;
+    width: fit-content;
+    overflow: clip;
+    max-width: -webkit-fill-available;
+}
+
+/* Başlıklar */
+h1, h2, h3, h4, h5, h6, strong, b {
+    color: #e11d1d;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .card { padding: 12px; }
+    .info { font-size: xx-small; }
+    .center-big-logo { width: 640px; }
+    .footer-logo { width: 36px; height: 36px; }
+}
