@@ -2,6 +2,7 @@
 # Whether to enable telemetry (default: true). No personal data is collected.
 enable_telemetry = true
 
+
 # List of environment variables to be provided by each user to use the app.
 user_env = []
 
@@ -19,7 +20,7 @@ allow_origins = ["*"]
 
 [features]
 # Process and display HTML in messages. This can be a security risk (see https://stackoverflow.com/questions/19603097/why-is-it-dangerous-to-render-user-generated-html-or-javascript)
-unsafe_allow_html = true
+unsafe_allow_html = false
 
 # Process and display mathematical expressions. This can clash with "$" characters in messages.
 latex = false
@@ -31,7 +32,7 @@ user_message_autoscroll = true
 auto_tag_thread = true
 
 # Allow users to edit their own messages
-edit_message = false
+edit_message = true
 
 # Authorize users to spontaneously upload files with messages
 [features.spontaneous_file_upload]
@@ -67,21 +68,21 @@ edit_message = false
 # Name of the assistant.
 name = "Assistant"
 
-# default_theme = "light"
+# default_theme = "dark"
 
 # layout = "wide"
 
 # default_sidebar_state = "open"
 
 # Description of the assistant. This is used for HTML tags.
-description = "Multi agent assistant with Semantic Kernel"
+# description = ""
 
 # Chain of Thought (CoT) display mode. Can be "hidden", "tool_call" or "full".
 cot = "full"
 
 # Specify a CSS file that can be used to customize the user interface.
 # The CSS file can be served from the public directory or via an external link.
-custom_css = "/public/custom.css"
+# custom_css = "/public/test.css"
 
 # Specify additional attributes for a custom CSS file
 # custom_css_attributes = "media=\"print\""
