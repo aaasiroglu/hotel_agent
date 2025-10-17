@@ -1,7 +1,7 @@
 # Obilet Hotel Finder AI Assistant
 
 Welcome!  
-Prepared by **Arif Aşıroğlu** for the Junior AI Specialist position at Obilet..
+Prepared by **Arif Aşıroğlu** 
 
 ## About This Project
 
@@ -36,4 +36,4 @@ It leverages advanced search methods, image analysis, and weather integration to
 
 ---
 
-_This project was developed by Arif Aşıroğlu as part of the application process for the Obilet Jr. AI Specialist position._
+_This project was developed by Arif Aşıroğlu as part of the application process for the AI Specialist position._
