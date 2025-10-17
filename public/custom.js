@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
   if (!document.querySelector(".footer-signature")) {
     const footer = document.createElement("div");
     footer.className = "footer-signature";
-    footer.innerText = "Prepared by Arif Aşıroğlu for the Jr. AI Specialist position upon Obilet's request.";
+    footer.innerText = "Prepared by Arif Aşıroğlu.";
     document.body.appendChild(footer);
   }
 });
