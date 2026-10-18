@@ -327,7 +327,7 @@ def get_current_weather(city):
     """
     try:
         # 1. Şehri AccuWeather Location API ile bul
-        api_key = "PCfKgk3ntptMbI581tlvyc57gd9UzMsJ"  # .env'den oku veya config dosyandan çek
+        api_key = config.accuwather_key  # .env: ACCUWEATHER_API_KEY
         location_url = f"http://dataservice.accuweather.com/locations/v1/cities/search?apikey={api_key}&q={city}&language=tr-tr"
         loc_resp = requests.get(location_url, timeout=5)
         loc_resp.raise_for_status()
